@@ -1,0 +1,19 @@
+.group-moderators {
+  .admin-main-nav {
+    .nav-pills > li:nth-child(4),
+    .nav-pills > li:nth-child(5) {
+      display: none;
+    }
+  }
+  .version-checks,
+  .admin-report .header .breadcrumb .report .info,
+  .dashboard .misc .last-dashboard-update, 
+  .dashboard-next .misc .last-dashboard-update,
+  .dashboard-new-features {
+    display: none;
+  }
+}
+
+body:not(.group-moderators) .topic-status-filter {
+    display: none;
+}
