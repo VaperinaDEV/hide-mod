@@ -1,4 +1,4 @@
-.group-moderators {
+.primary-group-moderators {
   .admin-main-nav {
     .nav-pills > li:nth-child(4),
     .nav-pills > li:nth-child(5) {
@@ -14,6 +14,6 @@
   }
 }
 
-body:not(.group-moderators) .topic-status-filter {
+body:not(.primary-group-moderators) .topic-status-filter {
     display: none;
 }
