@@ -1,11 +1,22 @@
-<script type="text/discourse-plugin" version="0.8">
-  const user = api.getCurrentUser();
-  const body = document.querySelector('body');
-  
-  if (user) {
-    user
-      .moderators
-      .map((g) => `group-${g.name}`)
-      .forEach((g) => body.classList.add(g));
-  }
+<script>
+if (window.jQuery) {
+    window.jQuery(function ($) {
+        var u = Discourse.User.current();
+        if (u && (u.username === 'Donat')) {
+	        .admin-main-nav {
+            .nav-pills > li:nth-child(4),
+            .nav-pills > li:nth-child(5) {
+              display: none;
+            }
+          }
+          .version-checks,
+          .admin-report .header .breadcrumb .report .info,
+          .dashboard .misc .last-dashboard-update, 
+          .dashboard-next .misc .last-dashboard-update,
+          .dashboard-new-features {
+            display: none;
+          }
+        }
+   });
+});
 </script>
