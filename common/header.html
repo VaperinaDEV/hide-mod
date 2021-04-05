@@ -4,8 +4,8 @@
   
   if (user) {
     user
-      .groups
-      .map((g) => `group-${.moderators}`)
+      .moderators
+      .map((g) => `group-${g.name}`)
       .forEach((g) => body.classList.add(g));
   }
 </script>
