@@ -1,4 +1,4 @@
-body.staff {
+body:not(.primary-group-admin) {
   .admin-main-nav {
     .nav-pills > li:nth-child(4),
     .nav-pills > li:nth-child(5) {
